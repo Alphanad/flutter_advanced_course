@@ -110,11 +110,11 @@ class Sys {
     sunset = json['sunset'];
   }
 
-  int? type;
-  int? id;
+  num? type;
+  num? id;
   String? country;
-  int? sunrise;
-  int? sunset;
+  num? sunrise;
+  num? sunset;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -136,7 +136,7 @@ class Clouds {
     all = json['all'];
   }
 
-  int? all;
+  num? all;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -154,7 +154,7 @@ class Rain {
     h = json['1h'];
   }
 
-  double? h;
+  num? h;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -176,9 +176,9 @@ class Wind {
     gust = json['gust'];
   }
 
-  double? speed;
-  int? deg;
-  double? gust;
+  num? speed;
+  num? deg;
+  num? gust;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -221,14 +221,14 @@ class Main {
     grndLevel = json['grnd_level'];
   }
 
-  double? temp;
-  double? feelsLike;
-  double? tempMin;
-  double? tempMax;
-  int? pressure;
-  int? humidity;
-  int? seaLevel;
-  int? grndLevel;
+  num? temp;
+  num? feelsLike;
+  num? tempMin;
+  num? tempMax;
+  num? pressure;
+  num? humidity;
+  num? seaLevel;
+  num? grndLevel;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -259,7 +259,7 @@ class Weather {
     icon = json['icon'];
   }
 
-  int? id;
+  num? id;
   String? main;
   String? description;
   String? icon;
@@ -285,8 +285,8 @@ class Coord {
     lat = json['lat'];
   }
 
-  double? lon;
-  double? lat;
+  num? lon;
+  num? lat;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
